@@ -1,0 +1,18 @@
+/* Global */
+body {
+	background-color: #b9ffd2;
+}
+
+/* Fizz Container */
+.fizz-container {
+	/* Size and Position */
+	box-sizing: border-box;
+	width: 60%;
+	height: 50rem;
+	margin: 4rem auto;	
+	border-radius: 15px;
+	padding-top: 3rem;
+	/* Color and Text */
+	text-align: center;
+	background-color: white;
+}
