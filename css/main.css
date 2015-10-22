@@ -8,11 +8,15 @@ body {
 	/* Size and Position */
 	box-sizing: border-box;
 	width: 60%;
-	height: 50rem;
+	height: 100%;
 	margin: 4rem auto;	
 	border-radius: 15px;
 	padding-top: 3rem;
+	padding-bottom: 3rem;
 	/* Color and Text */
 	text-align: center;
 	background-color: white;
+}
+#fizzlist {
+	list-style: none;
 }

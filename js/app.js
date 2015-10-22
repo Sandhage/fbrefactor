@@ -1,19 +1,24 @@
-// Variables
-var fizzCount = 0;
-var node = document.getElementById('fizzlist');
+var fizzCount = 1;
+
 
 // Document-Ready Functions
-$(document).ready(function() {
+document.addEventListener("DOMContentLoaded", function(event) {
 	
-	for ( fizzCount = 0; fizzCount < 100; fizzCount++ ) {
-		if ( fizzCount % 3 == 0 && fizzCount % 5 !== 0 ) {
-			node.innerHTML( '<li>Fizz!</li>' );
-		} else if ( fizzCount % 3 !== 0 && fizzCount % 5 == 0 ) {
-			node.innerHTML( '<li>Buzz!</li>' );
-		} else if ( fizzCount % 3 == 0 && fizzCount % 5 == 0) {
-			node.innerHTML( '<li>FizzBuzz!</li>' );
-		} else if ( fizzCount % 3 !== 0 && fizzCount % 5 !== 0) {
-			node.innerHTML( '<li>' + fizzCount + '</li>' );
+	var node = document.getElementById('fizzlist');
+
+	for ( fizzCount = 1; fizzCount <= 100; fizzCount++ ) {
+		if ( fizzCount % 3 == 0 && fizzCount % 5 == 0) {
+			node.innerHTML = node.innerHTML + '<li>FizzBuzz!</li>';
+			console.log('fizzbuzz');
+		} else if ( fizzCount % 3 == 0 ) {
+			node.innerHTML = node.innerHTML + '<li>Fizz!</li>';
+			console.log('fizz');
+		} else if ( fizzCount % 5 == 0 ) {
+			node.innerHTML = node.innerHTML + '<li>Buzz!</li>';
+			console.log('buzz');
+		} else {
+			node.innerHTML = node.innerHTML + '<li>' + fizzCount + '</li>';
+			console.log(fizzCount);
 		};
 	};
 
