@@ -1,12 +1,9 @@
-var fizzCount = 1;
-
-
 // Document-Ready Functions
 document.addEventListener("DOMContentLoaded", function(event) {
 	
 	var node = document.getElementById('fizzlist');
 
-	for ( fizzCount = 1; fizzCount <= 100; fizzCount++ ) {
+	for ( var fizzCount = 1; fizzCount <= 100; fizzCount++ ) {
 		if ( fizzCount % 3 == 0 && fizzCount % 5 == 0) {
 			node.innerHTML = node.innerHTML + '<li>FizzBuzz!</li>';
 			console.log('fizzbuzz');
